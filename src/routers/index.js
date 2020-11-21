@@ -12,6 +12,7 @@ exports.default = function route (app) {
     try {
       await next();
     } catch (err) {
+      console.log(err)
       err.status = err.statusCode || err.status || 500;
       ctx.body = err.message;
       sendData(ctx, err, 'ERROR', '发生异常', err.status)

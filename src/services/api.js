@@ -3,6 +3,19 @@ const {
   SystemConfigService,
   CompileService,
 } = require('../packages/api/index')
+const decode = require('../packages/api/decoder');
+
+const {
+  produceSubCommandInfo,
+  FLAGS,
+  getAbi
+} = require('../packages/cli/interfaces/base');
+const {
+  check,
+  Str,
+  Addr,
+  Any
+} = require('../packages/api/common/typeCheck');
 
 const path = require('path');
 const fs = require('fs');
@@ -80,19 +93,18 @@ module.exports = {
 
   deploy: async (contrast, parameters) => {
     let contractName = contrast;
-
     if (!contractName.endsWith('.sol')) {
       contractName += '.sol';
     }
 
     let contractPath = path.join(web3jService.config.contractDir, contractName);
-    console.log(contractPath)
+
 
     if (!fs.existsSync(contractPath)) {
       throw new Error(`${contractName} doesn't exist`);
     }
     let ContractsOutputDir = web3jService.config.contractOutputDir
-    console.log(ContractsOutputDir)
+
 
     let contractClass = compileService.compile(contractPath);
     if (!fs.existsSync(ContractsOutputDir)) {
@@ -103,8 +115,6 @@ module.exports = {
     contractName = contractName.substring(0, contractName.indexOf('.'));
     let abiPath = path.join(ContractsOutputDir, `${path.basename(contractName)}.abi`);
     let binPath = path.join(ContractsOutputDir, `${path.basename(contractName)}.bin`);
-    console.log(abiPath)
-    console.log(binPath)
 
     try {
       fs.writeFileSync(abiPath, JSON.stringify(contractClass.abi));
@@ -116,6 +126,7 @@ module.exports = {
         let addressPath = path.join(ContractsOutputDir, `.${path.basename(contractName, '.sol')}.address`);
 
         try {
+          web3jService.config.contractMap.set(contrast, contractAddress)
           fs.appendFileSync(addressPath, contractAddress + '\n');
         } catch (error) { }
 
@@ -125,11 +136,70 @@ module.exports = {
           transactionHash: result.transactionHash
         };
       }
-
       return {
         status: result.status,
         transactionHash: result.transactionHash
       };
     });
+  },
+  call: (argv) => {
+    let contractName = argv.contractName;
+    let contractAddress = argv.contractAddress;
+    let functionName = argv.function;
+    let parameters = argv.parameters;
+
+    check([contractName, contractAddress, functionName, parameters], Str, Addr, Str, Any);
+
+    let inputsReg = /\(.*\)/;
+    let inputs = inputsReg.exec(functionName);
+    if (inputs) {
+      inputs = inputs[0];
+      inputs = inputs.substring(1, inputs.length - 1).split(',');
+      inputs = inputs.map((input) => input.trim());
+    }
+
+    let pureFunctionName = functionName.replace(inputsReg, '');
+    let abi = getAbi(contractName, pureFunctionName, inputs, web3jService.config.contractOutputDir);
+
+    if (!abi) {
+      throw new Error(`no ABI for method \`${functionName}\` of contract \`${contractName}\``);
+    }
+
+    let decoder = decode.createMethodDecoder(abi, null);
+
+    if (abi.constant) {
+      return web3jService.call(contractAddress, abi, parameters).then((result) => {
+        let status = result.result.status;
+        let ret = {
+          status: status
+        };
+        let output = result.result.output;
+        if (output !== '0x') {
+          ret.output = decoder.decodeOutput(output);
+        }
+        return ret;
+      });
+    } else {
+      return web3jService.sendRawTransaction(contractAddress, abi, parameters).then((result) => {
+        let txHash = result.transactionHash;
+        let status = result.status;
+        let ret = {
+          transactionHash: txHash,
+          status: status
+        };
+        let output = result.output;
+        if (output !== '0x') {
+          ret.output = decoder.decodeOutput(output);
+        }
+        return ret;
+      });
+    }
+  },
+  getAllContract: async () => {
+    let obj = {}
+    web3jService.config.contractMap.forEach(function (value, key) {
+      obj[key] = value;
+    })
+    return obj;
   }
 }

@@ -55,7 +55,8 @@ class Configuration {
     if (!configFilePath) {
       throw new ConfigurationError('invalid configuration file path');
     }
-
+    this.contractMap = new Map()
+    this.contractAddressList
     this.configDir = path.dirname(configFilePath);
     let configContent = fs.readFileSync(configFilePath);
     let config = null;

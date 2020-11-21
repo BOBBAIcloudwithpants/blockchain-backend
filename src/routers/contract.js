@@ -5,4 +5,9 @@ const Router = require("koa-express-router");
 const router = new Router();
 module.exports = exportRtr(router)
 
-router.route('/').post(ContractCtrl.deploy)
+router
+  .route('/')
+  .post(ContractCtrl.deploy)
+  .get(ContractCtrl.getAllContract)
+
+
