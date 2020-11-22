@@ -5,6 +5,8 @@ const Router = require("koa-express-router");
 const router = new Router();
 module.exports = exportRtr(router)
 
+router.route('/register').post(StageOneCtrl.register)
+
 router.route('/blocknumber').get(StageOneCtrl.getBlockNumber)
 
 router.route('/observelist').get(StageOneCtrl.getObserveList)

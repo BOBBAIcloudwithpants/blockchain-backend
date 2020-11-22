@@ -271,6 +271,7 @@ class Configuration {
     }
   }
 
+
   _parseAccounts (config) {
     if (!config.accounts || typeof config.accounts !== 'object') {
       throw new ConfigurationError('invalid `accounts` property');
@@ -284,6 +285,7 @@ class Configuration {
 
           if (!this.accounts[id]) {
             this.accounts[id] = {
+              'address': config.accounts[id].address,
               'privateKey': this._parsePrivateKey(config.accounts[id])
             };
           } else {

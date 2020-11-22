@@ -1,8 +1,14 @@
 const { getObserverList, getBlockNumber, getSealerList, getConsensusStatus, getSyncStatus, getClientVersion, getNodeIDList, getGroupList, getBlockByHash, getBlockByNumber, getBlockHashByNumber, getTransactionByHash, getTransactionByBlockHashAndIndex, getGroupPeers } = require("../services/api");
+const { init } = require('../services/init')
 const { sendData } = require("../utils");
 
 
 module.exports = {
+  register: async (ctx, next) => {
+    const { contractName, contractAddress } = ctx.request.body
+    await init(contractName, contractAddress);
+    return sendData(ctx, {}, 'OK', '注册成功', 200);
+  },
   getBlockNumber: async (ctx, next) => {
     const res = await getBlockNumber();
     return sendData(ctx, res, 'OK', '获取最新块高成功', 200);

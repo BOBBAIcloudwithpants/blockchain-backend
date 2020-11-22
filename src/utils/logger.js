@@ -10,7 +10,7 @@ const logger = async function (ctx, next) {
 
   // 拦截操作响应 request
   res.on('finish', () => {
-    console.log(`${ctx.response.body.time} \t ${ctx.method} ${url} \t ${ctx.response.status} \t ${ctx.response.body.msg}`);
+    console.log(`${ctx.method} ${url} \t ${ctx.response.status} \t ${ctx.response.body.msg}`);
   });
 };
 

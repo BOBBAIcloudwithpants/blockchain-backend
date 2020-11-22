@@ -19,6 +19,7 @@ const {
 
 const path = require('path');
 const fs = require('fs');
+const { async } = require('rxjs');
 
 const configFile = path.join(process.cwd(), 'src/packages/cli/conf/config.json');
 const config = new Configuration(configFile);
@@ -160,7 +161,7 @@ module.exports = {
 
     let pureFunctionName = functionName.replace(inputsReg, '');
     let abi = getAbi(contractName, pureFunctionName, inputs, web3jService.config.contractOutputDir);
-
+    // abi.constant = 1;
     if (!abi) {
       throw new Error(`no ABI for method \`${functionName}\` of contract \`${contractName}\``);
     }
@@ -169,6 +170,8 @@ module.exports = {
 
     if (abi.constant) {
       return web3jService.call(contractAddress, abi, parameters).then((result) => {
+        console.log("use call")
+        console.log(result)
         let status = result.result.status;
         let ret = {
           status: status
@@ -181,6 +184,7 @@ module.exports = {
       });
     } else {
       return web3jService.sendRawTransaction(contractAddress, abi, parameters).then((result) => {
+        console.log(result)
         let txHash = result.transactionHash;
         let status = result.status;
         let ret = {
@@ -201,5 +205,5 @@ module.exports = {
       obj[key] = value;
     })
     return obj;
-  }
+  },
 }
