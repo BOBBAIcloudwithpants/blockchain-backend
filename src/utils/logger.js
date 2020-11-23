@@ -9,8 +9,12 @@ const logger = async function (ctx, next) {
   await next();
 
   // 拦截操作响应 request
+  let msg = "";
+  if (ctx.response.body != undefined) {
+    msg = ctx.response.body.msg;
+  }
   res.on('finish', () => {
-    console.log(`${ctx.method} ${url} \t ${ctx.response.status} \t ${ctx.response.body.msg}`);
+    console.log(`${ctx.method} ${url} \t ${ctx.response.status} \t ${msg}`);
   });
 };
 

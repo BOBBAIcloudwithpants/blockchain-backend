@@ -4,6 +4,7 @@ const { sendData } = require('../utils');
 const contract = require('./contract')
 const block = require('./block')
 const tx = require('./transaction')
+const account = require('./account')
 
 
 exports.default = function route (app) {
@@ -23,5 +24,6 @@ exports.default = function route (app) {
   router.use('/contract', contract)
   router.use('/block', block)
   router.use('/transaction', tx)
+  router.use('/account', account);
 
 }
