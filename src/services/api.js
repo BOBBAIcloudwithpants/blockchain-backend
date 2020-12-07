@@ -94,6 +94,7 @@ module.exports = {
 
   deploy: async (contrast, parameters) => {
     let contractName = contrast;
+
     if (!contractName.endsWith('.sol')) {
       contractName += '.sol';
     }
