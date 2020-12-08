@@ -1,15 +1,25 @@
 {
   "encryptType": "ECDSA",
   "accounts": {
-    "微众银行": {
+    "宝马": {
       "type": "pem",
       "value": "./accounts/0x27a28f09ec7accce2eecc27ebcd9453226ed3e52.pem",
       "address": "0x27a28f09ec7accce2eecc27ebcd9453226ed3e52"
     },
-    "字节跳动": {
+    "米其林轮胎公司": {
       "type": "pem",
       "value": "./accounts/0x678417bd3b61755bfda7629dd52b238d1a6311fb.pem",
       "address": "0x678417bd3b61755bfda7629dd52b238d1a6311fb"
+    },
+    "至善园轮毂公司": {
+      "type": "pem",
+      "value": "./accounts/0x37be6e7c78d4596979ea3b39b716cb85d7927778.pem",
+      "address": "0x37be6e7c78d4596979ea3b39b716cb85d7927778"
+    },
+    "渣打银行": {
+      "type": "pem",
+      "address": "0x0f69795d3af889d6421d568df9e7fe1ce2d9771c",
+      "value": "./accounts/0x0f69795d3af889d6421d568df9e7fe1ce2d9771c.pem"
     }
   },
   "nodes": [

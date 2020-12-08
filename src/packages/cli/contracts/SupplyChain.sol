@@ -322,7 +322,7 @@ contract SupplyChain {
     // 获取所有银行
     function getAllBanks() public view returns (Bank[] memory) {
         Bank[] memory ret = new Bank[](banks.length);
-        for (uint256 i = 0; i < companies.length; i++) {
+        for (uint256 i = 0; i < banks.length; i++) {
             Bank storage temp = banks[i];
             ret[i] = temp;
         }
@@ -567,8 +567,9 @@ contract SupplyChain {
             return Message(false, "该账单已完成还款，不可再被拆分");
         }
         // 鉴权完成，开始转让
-
-        // 首先新增一份订单
+        // 调整原有的账单金额
+        adjustMoneyForBill(bid, bill_to_be_split.money - money);
+        // 新增一份订单
         addBill(
             bill_to_be_split.borrow_company,
             to,
@@ -581,8 +582,6 @@ contract SupplyChain {
             0
         );
 
-        // 然后调整原有的账单金额
-        adjustMoneyForBill(bid, bill_to_be_split.money - money);
         return Message(true, "转让完成, 等待审核中");
     }
 
