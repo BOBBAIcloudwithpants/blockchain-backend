@@ -1,11 +1,13 @@
 const Router = require('koa-express-router')
 const info = require('./info');
+const accounts = require('./account')
 const { sendData } = require('../utils');
 const contract = require('./contract')
 const block = require('./block')
 const tx = require('./transaction')
 const account = require('./account')
-
+const adminRtr = require('./administrator')
+const bankRtr = require('./bank');
 
 exports.default = function route (app) {
   const router = new Router({ prefix: '/api' })
@@ -20,6 +22,10 @@ exports.default = function route (app) {
     }
   });
   app.use(router.routes())
+  router.use('/accounts', accounts)
+  router.use('/administrater', adminRtr)
+  router.use('/banks', bankRtr)
+
   router.use('/', info)
   router.use('/contract', contract)
   router.use('/block', block)
