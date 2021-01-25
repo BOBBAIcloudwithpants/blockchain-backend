@@ -442,7 +442,7 @@ define({ "api": [
   {
     "type": "post",
     "url": "/accounts/login",
-    "title": "注册管理员",
+    "title": "登录",
     "name": "登录",
     "group": "Account",
     "parameter": {
