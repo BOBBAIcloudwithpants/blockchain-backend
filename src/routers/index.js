@@ -8,7 +8,8 @@ const tx = require('./transaction')
 const account = require('./account')
 const adminRtr = require('./administrator')
 const bankRtr = require('./bank');
-
+const certRtr = require('./certifier')
+const companyRtr = require('./company')
 exports.default = function route (app) {
   const router = new Router({ prefix: '/api' })
   app.use(async (ctx, next) => {
@@ -25,11 +26,15 @@ exports.default = function route (app) {
   router.use('/accounts', accounts)
   router.use('/administrater', adminRtr)
   router.use('/banks', bankRtr)
+  router.use('/certifiers', certRtr)
+  router.use('/companies', companyRtr)
+
 
   router.use('/', info)
   router.use('/contract', contract)
   router.use('/block', block)
   router.use('/transaction', tx)
   router.use('/account', account);
+
 
 }
