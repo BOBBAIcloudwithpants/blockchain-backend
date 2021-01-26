@@ -1,6 +1,6 @@
 const { sendData } = require("../utils");
 const { call } = require("../services/api");
-const { async } = require("rxjs");
+const AccountServ = require("../services/account")
 
 
 module.exports = {
@@ -22,8 +22,8 @@ module.exports = {
     }
     const res = await call({
       // TODO: finish the storage of contract
-      contractAddress: "",
-      contractName: "",
+      contractAddress: AccountServ.getContractAddress(),
+      contractName: AccountServ.getContractName(),
       function: "registerCompany",
       parameters: [company_address, company_name]
     })
@@ -48,12 +48,28 @@ module.exports = {
     }
     const res = await call({
       // TODO: finish the storage of contract
-      contractAddress: "",
-      contractName: "",
+      contractAddress: AccountServ.getContractAddress(),
+      contractName: AccountServ.getContractName(),
       function: "registerCoreCompany",
       parameters: [company_address, company_name]
     })
     sendData(ctx, res, 'OK', "注册企业成功", 200)
+  },
+
+  /**
+   * @api {get} /companies/core 获取全部核心企业
+   * @apiGroup Company
+   * @apiSuccess {Object[]} data  核心企业数组
+   * @apiSuccess {String} data.addr   企业地址
+   * @apiSuccess {String} data.name   企业名称
+   * @apiSuccess {Number} data.cType  企业类型
+   * @apiSuccess {Number} data.inCredit   该企业分配得到的信用点
+   * @apiSuccess {Number} data.outCredit  该企业发放的信用点
+   * @apiSuccess {Number} code 状态码
+   * @apiSuccess {Object[]} data 数据
+   */
+  getAllCoreCompanies: async (ctx, next) => {
+
   }
 
 }

@@ -712,6 +712,71 @@ define({ "api": [
     "groupTitle": "Administrator"
   },
   {
+    "type": "get",
+    "url": "/banks",
+    "title": "获取全部银行",
+    "group": "Bank",
+    "success": {
+      "fields": {
+        "Success 200": [
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "msg",
+            "description": "<p>结果描述</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "Number",
+            "optional": false,
+            "field": "code",
+            "description": "<p>状态码</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "Object[]",
+            "optional": false,
+            "field": "data",
+            "description": "<p>银行数组，下面是每个银行包含的属性</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "data.addr",
+            "description": "<p>银行地址</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "data.name",
+            "description": "<p>名字</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "Number",
+            "optional": false,
+            "field": "data.inCredit",
+            "description": "<p>得到的信用点数</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "Number",
+            "optional": false,
+            "field": "data.outCredit",
+            "description": "<p>发放出去的总信用点</p>"
+          }
+        ]
+      }
+    },
+    "version": "0.0.0",
+    "filename": "src/controllers/bank.js",
+    "groupTitle": "Bank",
+    "name": "GetBanks"
+  },
+  {
     "type": "post",
     "url": "/banks/sendcredit",
     "title": "银行发送信用点给核心企业",
@@ -741,13 +806,6 @@ define({ "api": [
         "Success 200": [
           {
             "group": "Success 200",
-            "type": "Object",
-            "optional": false,
-            "field": "data",
-            "description": ""
-          },
-          {
-            "group": "Success 200",
             "type": "String",
             "optional": false,
             "field": "msg",
@@ -759,6 +817,13 @@ define({ "api": [
             "optional": false,
             "field": "code",
             "description": "<p>状态码</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "Object[]",
+            "optional": false,
+            "field": "data",
+            "description": ""
           }
         ]
       }
@@ -881,6 +946,71 @@ define({ "api": [
     "version": "0.0.0",
     "filename": "src/controllers/certifier.js",
     "groupTitle": "Certifier"
+  },
+  {
+    "type": "get",
+    "url": "/companies/core",
+    "title": "获取全部核心企业",
+    "group": "Company",
+    "success": {
+      "fields": {
+        "Success 200": [
+          {
+            "group": "Success 200",
+            "type": "Object[]",
+            "optional": false,
+            "field": "data",
+            "description": "<p>核心企业数组</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "data.addr",
+            "description": "<p>企业地址</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "data.name",
+            "description": "<p>企业名称</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "Number",
+            "optional": false,
+            "field": "data.cType",
+            "description": "<p>企业类型</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "Number",
+            "optional": false,
+            "field": "data.inCredit",
+            "description": "<p>该企业分配得到的信用点</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "Number",
+            "optional": false,
+            "field": "data.outCredit",
+            "description": "<p>该企业发放的信用点</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "Number",
+            "optional": false,
+            "field": "code",
+            "description": "<p>状态码</p>"
+          }
+        ]
+      }
+    },
+    "version": "0.0.0",
+    "filename": "src/controllers/company.js",
+    "groupTitle": "Company",
+    "name": "GetCompaniesCore"
   },
   {
     "type": "post",

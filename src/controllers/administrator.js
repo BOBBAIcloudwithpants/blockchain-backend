@@ -1,6 +1,7 @@
 const { sendData } = require("../utils");
 const { deploy, call, getAllContract } = require("../services/api");
 const { async } = require("rxjs");
+const AccountServ = require("../services/account")
 
 module.exports = {
   /**
@@ -54,8 +55,8 @@ module.exports = {
     }
     const { bank_address, amount } = ctx.request.body
     const res = await call({
-      contractAddress: "",
-      contractName: "",
+      contractAddress: AccountServ.getContractAddress(),
+      contractName: AccountServ.getContractName(),
       function: "creditDistributionToBank",
       parameters: [bank_address, amount]
     })
@@ -80,8 +81,8 @@ module.exports = {
     }
     const { bank_address, amount } = ctx.request.body
     const res = await call({
-      contractAddress: "",
-      contractName: "",
+      contractAddress: AccountServ.getContractAddress(),
+      contractName: AccountServ.getContractName(),
       function: "creditReturnFromBank",
       parameters: [bank_address, amount]
     })

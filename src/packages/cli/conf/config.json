@@ -37,5 +37,7 @@
   "chainID": 1,
   "timeout": 10000,
   "contractDir": "../contracts",
-  "contractOutputDir": "../contracts/output"
+  "contractOutputDir": "../contracts/output",
+  "contractNameFile": "../packages/cli/conf/contractNameFile.txt",
+  "contractAddressFile": "../packages/cli/conf/contractAddressFile.txt"
 }

@@ -1,5 +1,6 @@
 const { sendData } = require("../utils");
 const { call } = require("../services/api");
+const AccountServ = require("../services/account")
 
 module.exports = {
   /**
@@ -20,8 +21,8 @@ module.exports = {
     }
     const res = await call({
       // TODO: finish the storage of contract
-      contractAddress: "",
-      contractName: "",
+      contractAddress: AccountServ.getContractAddress(),
+      contractName: AccountServ.getContractName(),
       function: "registerCertifier",
       parameters: [cert_address, cert_name]
     })
