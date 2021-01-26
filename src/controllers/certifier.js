@@ -1,6 +1,7 @@
 const { sendData } = require("../utils");
 const { call } = require("../services/api");
-const AccountServ = require("../services/account")
+const AccountServ = require("../services/account");
+const { async } = require("rxjs");
 
 module.exports = {
   /**
@@ -28,4 +29,30 @@ module.exports = {
     })
     sendData(ctx, res, 'OK', "注册监督机构成功", 200)
   },
+
+  /**
+   * @api {get} /certifiers 获取全部监督机构
+   * @apiGroup Certifier
+   * @apiSuccess {Object[]} data 监督机构数组
+   * @apiSuccess {String} data.addr 
+   * @apiSuccess {String} data.name
+   * @apiSuccess {String} msg 结果描述
+   * @apiSuccess {Number} code 状态码 200是成功
+   */
+  getAllCertifiers: async (ctx, next) => {
+
+  },
+
+  /**
+   * @api {get} /certifiers/:addr 根据地址获取监督机构
+   * @apiGroup Certifier
+   * @apiSuccess {Object[]} data 监督机构数组
+   * @apiSuccess {String} data.addr 
+   * @apiSuccess {String} data.name
+   * @apiSuccess {String} msg 结果描述
+   * @apiSuccess {Number} code 状态码 200是成功
+   */
+  getCertifierByAddress: async (ctx, next) => {
+
+  }
 }

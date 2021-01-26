@@ -64,8 +64,7 @@ module.exports = {
   },
 
   /**
-   * @api {post} /administrator/recyclecredit
-   * @apiName 管理员从银行回收信用点
+   * @api {post} /administrator/recyclecredit 管理员从银行回收信用点
    * @apiGroup Administrator
    * @apiParam {String} bank_address  
    * @apiParam {Number} amount      要发放的信用点数量
@@ -87,5 +86,16 @@ module.exports = {
       parameters: [bank_address, amount]
     })
     sendData(ctx, res, 'OK', "回收信用点成功", 200)
+  },
+
+  /**
+   * @api {get} /administrator/:address 根据地址获取管理员信息
+   * @apiGroup Administrator 
+   * @apiSuccess {Object[]} data
+   * @apiSuccess {String} data.addr // 银行地址
+   * @apiSuccess {Number} data.outCredit // 银行发放的信用点
+   */
+  getAdministratorInfoByAddress: async (ctx, next) => {
+
   }
 }

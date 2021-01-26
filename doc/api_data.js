@@ -1,517 +1,5 @@
 define({ "api": [
   {
-    "type": "",
-    "url": "private",
-    "title": "",
-    "version": "0.0.0",
-    "filename": "src/packages/api/compile/compilers/solc-0.5/node_modules/commander/index.js",
-    "group": "/Users/baijiadong/Codes/blockchain-backend/src/packages/api/compile/compilers/solc-0.5/node_modules/commander/index.js",
-    "groupTitle": "/Users/baijiadong/Codes/blockchain-backend/src/packages/api/compile/compilers/solc-0.5/node_modules/commander/index.js",
-    "name": "Private"
-  },
-  {
-    "type": "",
-    "url": "private",
-    "title": "",
-    "version": "0.0.0",
-    "filename": "src/packages/api/compile/compilers/solc-0.5/node_modules/commander/index.js",
-    "group": "/Users/baijiadong/Codes/blockchain-backend/src/packages/api/compile/compilers/solc-0.5/node_modules/commander/index.js",
-    "groupTitle": "/Users/baijiadong/Codes/blockchain-backend/src/packages/api/compile/compilers/solc-0.5/node_modules/commander/index.js",
-    "name": "Private"
-  },
-  {
-    "type": "",
-    "url": "private",
-    "title": "",
-    "version": "0.0.0",
-    "filename": "src/packages/api/compile/compilers/solc-0.5/node_modules/commander/index.js",
-    "group": "/Users/baijiadong/Codes/blockchain-backend/src/packages/api/compile/compilers/solc-0.5/node_modules/commander/index.js",
-    "groupTitle": "/Users/baijiadong/Codes/blockchain-backend/src/packages/api/compile/compilers/solc-0.5/node_modules/commander/index.js",
-    "name": "Private"
-  },
-  {
-    "type": "",
-    "url": "private",
-    "title": "",
-    "version": "0.0.0",
-    "filename": "src/packages/api/compile/compilers/solc-0.5/node_modules/commander/index.js",
-    "group": "/Users/baijiadong/Codes/blockchain-backend/src/packages/api/compile/compilers/solc-0.5/node_modules/commander/index.js",
-    "groupTitle": "/Users/baijiadong/Codes/blockchain-backend/src/packages/api/compile/compilers/solc-0.5/node_modules/commander/index.js",
-    "name": "Private"
-  },
-  {
-    "type": "",
-    "url": "private",
-    "title": "",
-    "version": "0.0.0",
-    "filename": "src/packages/api/compile/compilers/solc-0.5/node_modules/commander/index.js",
-    "group": "/Users/baijiadong/Codes/blockchain-backend/src/packages/api/compile/compilers/solc-0.5/node_modules/commander/index.js",
-    "groupTitle": "/Users/baijiadong/Codes/blockchain-backend/src/packages/api/compile/compilers/solc-0.5/node_modules/commander/index.js",
-    "name": "Private"
-  },
-  {
-    "type": "",
-    "url": "private",
-    "title": "",
-    "version": "0.0.0",
-    "filename": "src/packages/api/compile/compilers/solc-0.5/node_modules/commander/index.js",
-    "group": "/Users/baijiadong/Codes/blockchain-backend/src/packages/api/compile/compilers/solc-0.5/node_modules/commander/index.js",
-    "groupTitle": "/Users/baijiadong/Codes/blockchain-backend/src/packages/api/compile/compilers/solc-0.5/node_modules/commander/index.js",
-    "name": "Private"
-  },
-  {
-    "type": "",
-    "url": "private",
-    "title": "",
-    "version": "0.0.0",
-    "filename": "src/packages/api/compile/compilers/solc-0.5/node_modules/commander/index.js",
-    "group": "/Users/baijiadong/Codes/blockchain-backend/src/packages/api/compile/compilers/solc-0.5/node_modules/commander/index.js",
-    "groupTitle": "/Users/baijiadong/Codes/blockchain-backend/src/packages/api/compile/compilers/solc-0.5/node_modules/commander/index.js",
-    "name": "Private"
-  },
-  {
-    "type": "",
-    "url": "private",
-    "title": "",
-    "version": "0.0.0",
-    "filename": "src/packages/api/compile/compilers/solc-0.5/node_modules/commander/index.js",
-    "group": "/Users/baijiadong/Codes/blockchain-backend/src/packages/api/compile/compilers/solc-0.5/node_modules/commander/index.js",
-    "groupTitle": "/Users/baijiadong/Codes/blockchain-backend/src/packages/api/compile/compilers/solc-0.5/node_modules/commander/index.js",
-    "name": "Private"
-  },
-  {
-    "type": "",
-    "url": "private",
-    "title": "",
-    "version": "0.0.0",
-    "filename": "src/packages/api/compile/compilers/solc-0.5/node_modules/commander/index.js",
-    "group": "/Users/baijiadong/Codes/blockchain-backend/src/packages/api/compile/compilers/solc-0.5/node_modules/commander/index.js",
-    "groupTitle": "/Users/baijiadong/Codes/blockchain-backend/src/packages/api/compile/compilers/solc-0.5/node_modules/commander/index.js",
-    "name": "Private"
-  },
-  {
-    "type": "",
-    "url": "private",
-    "title": "",
-    "version": "0.0.0",
-    "filename": "src/packages/api/compile/compilers/solc-0.5/node_modules/commander/index.js",
-    "group": "/Users/baijiadong/Codes/blockchain-backend/src/packages/api/compile/compilers/solc-0.5/node_modules/commander/index.js",
-    "groupTitle": "/Users/baijiadong/Codes/blockchain-backend/src/packages/api/compile/compilers/solc-0.5/node_modules/commander/index.js",
-    "name": "Private"
-  },
-  {
-    "type": "",
-    "url": "private",
-    "title": "",
-    "version": "0.0.0",
-    "filename": "src/packages/api/compile/compilers/solc-0.5/node_modules/commander/index.js",
-    "group": "/Users/baijiadong/Codes/blockchain-backend/src/packages/api/compile/compilers/solc-0.5/node_modules/commander/index.js",
-    "groupTitle": "/Users/baijiadong/Codes/blockchain-backend/src/packages/api/compile/compilers/solc-0.5/node_modules/commander/index.js",
-    "name": "Private"
-  },
-  {
-    "type": "",
-    "url": "private",
-    "title": "",
-    "version": "0.0.0",
-    "filename": "src/packages/api/compile/compilers/solc-0.5/node_modules/commander/index.js",
-    "group": "/Users/baijiadong/Codes/blockchain-backend/src/packages/api/compile/compilers/solc-0.5/node_modules/commander/index.js",
-    "groupTitle": "/Users/baijiadong/Codes/blockchain-backend/src/packages/api/compile/compilers/solc-0.5/node_modules/commander/index.js",
-    "name": "Private"
-  },
-  {
-    "type": "",
-    "url": "private",
-    "title": "",
-    "version": "0.0.0",
-    "filename": "src/packages/api/compile/compilers/solc-0.5/node_modules/commander/index.js",
-    "group": "/Users/baijiadong/Codes/blockchain-backend/src/packages/api/compile/compilers/solc-0.5/node_modules/commander/index.js",
-    "groupTitle": "/Users/baijiadong/Codes/blockchain-backend/src/packages/api/compile/compilers/solc-0.5/node_modules/commander/index.js",
-    "name": "Private"
-  },
-  {
-    "type": "",
-    "url": "private",
-    "title": "",
-    "version": "0.0.0",
-    "filename": "src/packages/api/compile/compilers/solc-0.5/node_modules/commander/index.js",
-    "group": "/Users/baijiadong/Codes/blockchain-backend/src/packages/api/compile/compilers/solc-0.5/node_modules/commander/index.js",
-    "groupTitle": "/Users/baijiadong/Codes/blockchain-backend/src/packages/api/compile/compilers/solc-0.5/node_modules/commander/index.js",
-    "name": "Private"
-  },
-  {
-    "type": "",
-    "url": "private",
-    "title": "",
-    "version": "0.0.0",
-    "filename": "src/packages/api/compile/compilers/solc-0.5/node_modules/commander/index.js",
-    "group": "/Users/baijiadong/Codes/blockchain-backend/src/packages/api/compile/compilers/solc-0.5/node_modules/commander/index.js",
-    "groupTitle": "/Users/baijiadong/Codes/blockchain-backend/src/packages/api/compile/compilers/solc-0.5/node_modules/commander/index.js",
-    "name": "Private"
-  },
-  {
-    "type": "",
-    "url": "private",
-    "title": "",
-    "version": "0.0.0",
-    "filename": "src/packages/api/compile/compilers/solc-0.5/node_modules/commander/index.js",
-    "group": "/Users/baijiadong/Codes/blockchain-backend/src/packages/api/compile/compilers/solc-0.5/node_modules/commander/index.js",
-    "groupTitle": "/Users/baijiadong/Codes/blockchain-backend/src/packages/api/compile/compilers/solc-0.5/node_modules/commander/index.js",
-    "name": "Private"
-  },
-  {
-    "type": "",
-    "url": "private",
-    "title": "",
-    "version": "0.0.0",
-    "filename": "src/packages/api/compile/compilers/solc-0.5/node_modules/commander/index.js",
-    "group": "/Users/baijiadong/Codes/blockchain-backend/src/packages/api/compile/compilers/solc-0.5/node_modules/commander/index.js",
-    "groupTitle": "/Users/baijiadong/Codes/blockchain-backend/src/packages/api/compile/compilers/solc-0.5/node_modules/commander/index.js",
-    "name": "Private"
-  },
-  {
-    "type": "",
-    "url": "private",
-    "title": "",
-    "version": "0.0.0",
-    "filename": "src/packages/api/compile/compilers/solc-0.5/node_modules/commander/index.js",
-    "group": "/Users/baijiadong/Codes/blockchain-backend/src/packages/api/compile/compilers/solc-0.5/node_modules/commander/index.js",
-    "groupTitle": "/Users/baijiadong/Codes/blockchain-backend/src/packages/api/compile/compilers/solc-0.5/node_modules/commander/index.js",
-    "name": "Private"
-  },
-  {
-    "type": "",
-    "url": "private",
-    "title": "",
-    "version": "0.0.0",
-    "filename": "src/packages/api/compile/compilers/solc-0.5/node_modules/commander/index.js",
-    "group": "/Users/baijiadong/Codes/blockchain-backend/src/packages/api/compile/compilers/solc-0.5/node_modules/commander/index.js",
-    "groupTitle": "/Users/baijiadong/Codes/blockchain-backend/src/packages/api/compile/compilers/solc-0.5/node_modules/commander/index.js",
-    "name": "Private"
-  },
-  {
-    "type": "",
-    "url": "private",
-    "title": "",
-    "version": "0.0.0",
-    "filename": "src/packages/api/compile/compilers/solc-0.5/node_modules/commander/index.js",
-    "group": "/Users/baijiadong/Codes/blockchain-backend/src/packages/api/compile/compilers/solc-0.5/node_modules/commander/index.js",
-    "groupTitle": "/Users/baijiadong/Codes/blockchain-backend/src/packages/api/compile/compilers/solc-0.5/node_modules/commander/index.js",
-    "name": "Private"
-  },
-  {
-    "type": "",
-    "url": "private",
-    "title": "",
-    "version": "0.0.0",
-    "filename": "src/packages/api/compile/compilers/solc-0.5/node_modules/commander/index.js",
-    "group": "/Users/baijiadong/Codes/blockchain-backend/src/packages/api/compile/compilers/solc-0.5/node_modules/commander/index.js",
-    "groupTitle": "/Users/baijiadong/Codes/blockchain-backend/src/packages/api/compile/compilers/solc-0.5/node_modules/commander/index.js",
-    "name": "Private"
-  },
-  {
-    "type": "",
-    "url": "private",
-    "title": "",
-    "version": "0.0.0",
-    "filename": "src/packages/api/compile/compilers/solc-0.5/node_modules/commander/index.js",
-    "group": "/Users/baijiadong/Codes/blockchain-backend/src/packages/api/compile/compilers/solc-0.5/node_modules/commander/index.js",
-    "groupTitle": "/Users/baijiadong/Codes/blockchain-backend/src/packages/api/compile/compilers/solc-0.5/node_modules/commander/index.js",
-    "name": "Private"
-  },
-  {
-    "type": "",
-    "url": "private",
-    "title": "",
-    "version": "0.0.0",
-    "filename": "src/packages/api/compile/compilers/solc-0.5/node_modules/commander/index.js",
-    "group": "/Users/baijiadong/Codes/blockchain-backend/src/packages/api/compile/compilers/solc-0.5/node_modules/commander/index.js",
-    "groupTitle": "/Users/baijiadong/Codes/blockchain-backend/src/packages/api/compile/compilers/solc-0.5/node_modules/commander/index.js",
-    "name": "Private"
-  },
-  {
-    "type": "",
-    "url": "private",
-    "title": "",
-    "version": "0.0.0",
-    "filename": "src/packages/api/compile/compilers/solc-0.5/node_modules/commander/index.js",
-    "group": "/Users/baijiadong/Codes/blockchain-backend/src/packages/api/compile/compilers/solc-0.5/node_modules/commander/index.js",
-    "groupTitle": "/Users/baijiadong/Codes/blockchain-backend/src/packages/api/compile/compilers/solc-0.5/node_modules/commander/index.js",
-    "name": "Private"
-  },
-  {
-    "type": "",
-    "url": "private",
-    "title": "",
-    "version": "0.0.0",
-    "filename": "src/packages/api/compile/compilers/solc-0.5/node_modules/commander/index.js",
-    "group": "/Users/baijiadong/Codes/blockchain-backend/src/packages/api/compile/compilers/solc-0.5/node_modules/commander/index.js",
-    "groupTitle": "/Users/baijiadong/Codes/blockchain-backend/src/packages/api/compile/compilers/solc-0.5/node_modules/commander/index.js",
-    "name": "Private"
-  },
-  {
-    "type": "",
-    "url": "public",
-    "title": "",
-    "version": "0.0.0",
-    "filename": "src/packages/api/compile/compilers/solc-0.5/node_modules/commander/index.js",
-    "group": "/Users/baijiadong/Codes/blockchain-backend/src/packages/api/compile/compilers/solc-0.5/node_modules/commander/index.js",
-    "groupTitle": "/Users/baijiadong/Codes/blockchain-backend/src/packages/api/compile/compilers/solc-0.5/node_modules/commander/index.js",
-    "name": "Public"
-  },
-  {
-    "type": "",
-    "url": "public",
-    "title": "",
-    "version": "0.0.0",
-    "filename": "src/packages/api/compile/compilers/solc-0.5/node_modules/commander/index.js",
-    "group": "/Users/baijiadong/Codes/blockchain-backend/src/packages/api/compile/compilers/solc-0.5/node_modules/commander/index.js",
-    "groupTitle": "/Users/baijiadong/Codes/blockchain-backend/src/packages/api/compile/compilers/solc-0.5/node_modules/commander/index.js",
-    "name": "Public"
-  },
-  {
-    "type": "",
-    "url": "public",
-    "title": "",
-    "version": "0.0.0",
-    "filename": "src/packages/api/compile/compilers/solc-0.5/node_modules/commander/index.js",
-    "group": "/Users/baijiadong/Codes/blockchain-backend/src/packages/api/compile/compilers/solc-0.5/node_modules/commander/index.js",
-    "groupTitle": "/Users/baijiadong/Codes/blockchain-backend/src/packages/api/compile/compilers/solc-0.5/node_modules/commander/index.js",
-    "name": "Public"
-  },
-  {
-    "type": "",
-    "url": "public",
-    "title": "",
-    "version": "0.0.0",
-    "filename": "src/packages/api/compile/compilers/solc-0.5/node_modules/commander/index.js",
-    "group": "/Users/baijiadong/Codes/blockchain-backend/src/packages/api/compile/compilers/solc-0.5/node_modules/commander/index.js",
-    "groupTitle": "/Users/baijiadong/Codes/blockchain-backend/src/packages/api/compile/compilers/solc-0.5/node_modules/commander/index.js",
-    "name": "Public"
-  },
-  {
-    "type": "",
-    "url": "public",
-    "title": "",
-    "version": "0.0.0",
-    "filename": "src/packages/api/compile/compilers/solc-0.5/node_modules/commander/index.js",
-    "group": "/Users/baijiadong/Codes/blockchain-backend/src/packages/api/compile/compilers/solc-0.5/node_modules/commander/index.js",
-    "groupTitle": "/Users/baijiadong/Codes/blockchain-backend/src/packages/api/compile/compilers/solc-0.5/node_modules/commander/index.js",
-    "name": "Public"
-  },
-  {
-    "type": "",
-    "url": "public",
-    "title": "",
-    "version": "0.0.0",
-    "filename": "src/packages/api/compile/compilers/solc-0.5/node_modules/commander/index.js",
-    "group": "/Users/baijiadong/Codes/blockchain-backend/src/packages/api/compile/compilers/solc-0.5/node_modules/commander/index.js",
-    "groupTitle": "/Users/baijiadong/Codes/blockchain-backend/src/packages/api/compile/compilers/solc-0.5/node_modules/commander/index.js",
-    "name": "Public"
-  },
-  {
-    "type": "",
-    "url": "public",
-    "title": "",
-    "version": "0.0.0",
-    "filename": "src/packages/api/compile/compilers/solc-0.5/node_modules/commander/index.js",
-    "group": "/Users/baijiadong/Codes/blockchain-backend/src/packages/api/compile/compilers/solc-0.5/node_modules/commander/index.js",
-    "groupTitle": "/Users/baijiadong/Codes/blockchain-backend/src/packages/api/compile/compilers/solc-0.5/node_modules/commander/index.js",
-    "name": "Public"
-  },
-  {
-    "type": "",
-    "url": "public",
-    "title": "",
-    "version": "0.0.0",
-    "filename": "src/packages/api/compile/compilers/solc-0.5/node_modules/commander/index.js",
-    "group": "/Users/baijiadong/Codes/blockchain-backend/src/packages/api/compile/compilers/solc-0.5/node_modules/commander/index.js",
-    "groupTitle": "/Users/baijiadong/Codes/blockchain-backend/src/packages/api/compile/compilers/solc-0.5/node_modules/commander/index.js",
-    "name": "Public"
-  },
-  {
-    "type": "",
-    "url": "public",
-    "title": "",
-    "version": "0.0.0",
-    "filename": "src/packages/api/compile/compilers/solc-0.5/node_modules/commander/index.js",
-    "group": "/Users/baijiadong/Codes/blockchain-backend/src/packages/api/compile/compilers/solc-0.5/node_modules/commander/index.js",
-    "groupTitle": "/Users/baijiadong/Codes/blockchain-backend/src/packages/api/compile/compilers/solc-0.5/node_modules/commander/index.js",
-    "name": "Public"
-  },
-  {
-    "type": "",
-    "url": "public",
-    "title": "",
-    "version": "0.0.0",
-    "filename": "src/packages/api/compile/compilers/solc-0.5/node_modules/commander/index.js",
-    "group": "/Users/baijiadong/Codes/blockchain-backend/src/packages/api/compile/compilers/solc-0.5/node_modules/commander/index.js",
-    "groupTitle": "/Users/baijiadong/Codes/blockchain-backend/src/packages/api/compile/compilers/solc-0.5/node_modules/commander/index.js",
-    "name": "Public"
-  },
-  {
-    "type": "",
-    "url": "public",
-    "title": "",
-    "version": "0.0.0",
-    "filename": "src/packages/api/compile/compilers/solc-0.5/node_modules/commander/index.js",
-    "group": "/Users/baijiadong/Codes/blockchain-backend/src/packages/api/compile/compilers/solc-0.5/node_modules/commander/index.js",
-    "groupTitle": "/Users/baijiadong/Codes/blockchain-backend/src/packages/api/compile/compilers/solc-0.5/node_modules/commander/index.js",
-    "name": "Public"
-  },
-  {
-    "type": "",
-    "url": "public",
-    "title": "",
-    "version": "0.0.0",
-    "filename": "src/packages/api/compile/compilers/solc-0.5/node_modules/commander/index.js",
-    "group": "/Users/baijiadong/Codes/blockchain-backend/src/packages/api/compile/compilers/solc-0.5/node_modules/commander/index.js",
-    "groupTitle": "/Users/baijiadong/Codes/blockchain-backend/src/packages/api/compile/compilers/solc-0.5/node_modules/commander/index.js",
-    "name": "Public"
-  },
-  {
-    "type": "",
-    "url": "public",
-    "title": "",
-    "version": "0.0.0",
-    "filename": "src/packages/api/compile/compilers/solc-0.5/node_modules/commander/index.js",
-    "group": "/Users/baijiadong/Codes/blockchain-backend/src/packages/api/compile/compilers/solc-0.5/node_modules/commander/index.js",
-    "groupTitle": "/Users/baijiadong/Codes/blockchain-backend/src/packages/api/compile/compilers/solc-0.5/node_modules/commander/index.js",
-    "name": "Public"
-  },
-  {
-    "type": "",
-    "url": "public",
-    "title": "",
-    "version": "0.0.0",
-    "filename": "src/packages/api/compile/compilers/solc-0.5/node_modules/commander/index.js",
-    "group": "/Users/baijiadong/Codes/blockchain-backend/src/packages/api/compile/compilers/solc-0.5/node_modules/commander/index.js",
-    "groupTitle": "/Users/baijiadong/Codes/blockchain-backend/src/packages/api/compile/compilers/solc-0.5/node_modules/commander/index.js",
-    "name": "Public"
-  },
-  {
-    "type": "",
-    "url": "public",
-    "title": "",
-    "version": "0.0.0",
-    "filename": "src/packages/api/compile/compilers/solc-0.5/node_modules/commander/index.js",
-    "group": "/Users/baijiadong/Codes/blockchain-backend/src/packages/api/compile/compilers/solc-0.5/node_modules/commander/index.js",
-    "groupTitle": "/Users/baijiadong/Codes/blockchain-backend/src/packages/api/compile/compilers/solc-0.5/node_modules/commander/index.js",
-    "name": "Public"
-  },
-  {
-    "type": "",
-    "url": "public",
-    "title": "",
-    "version": "0.0.0",
-    "filename": "src/packages/api/compile/compilers/solc-0.5/node_modules/commander/index.js",
-    "group": "/Users/baijiadong/Codes/blockchain-backend/src/packages/api/compile/compilers/solc-0.5/node_modules/commander/index.js",
-    "groupTitle": "/Users/baijiadong/Codes/blockchain-backend/src/packages/api/compile/compilers/solc-0.5/node_modules/commander/index.js",
-    "name": "Public"
-  },
-  {
-    "type": "",
-    "url": "public",
-    "title": "",
-    "version": "0.0.0",
-    "filename": "src/packages/api/compile/compilers/solc-0.5/node_modules/commander/index.js",
-    "group": "/Users/baijiadong/Codes/blockchain-backend/src/packages/api/compile/compilers/solc-0.5/node_modules/commander/index.js",
-    "groupTitle": "/Users/baijiadong/Codes/blockchain-backend/src/packages/api/compile/compilers/solc-0.5/node_modules/commander/index.js",
-    "name": "Public"
-  },
-  {
-    "type": "",
-    "url": "public",
-    "title": "",
-    "version": "0.0.0",
-    "filename": "src/packages/api/compile/compilers/solc-0.5/node_modules/commander/index.js",
-    "group": "/Users/baijiadong/Codes/blockchain-backend/src/packages/api/compile/compilers/solc-0.5/node_modules/commander/index.js",
-    "groupTitle": "/Users/baijiadong/Codes/blockchain-backend/src/packages/api/compile/compilers/solc-0.5/node_modules/commander/index.js",
-    "name": "Public"
-  },
-  {
-    "type": "",
-    "url": "public",
-    "title": "",
-    "version": "0.0.0",
-    "filename": "src/packages/api/compile/compilers/solc-0.5/node_modules/commander/index.js",
-    "group": "/Users/baijiadong/Codes/blockchain-backend/src/packages/api/compile/compilers/solc-0.5/node_modules/commander/index.js",
-    "groupTitle": "/Users/baijiadong/Codes/blockchain-backend/src/packages/api/compile/compilers/solc-0.5/node_modules/commander/index.js",
-    "name": "Public"
-  },
-  {
-    "type": "get",
-    "url": "/accounts",
-    "title": "获取当前用户的信息",
-    "group": "Account",
-    "success": {
-      "fields": {
-        "Success 200": [
-          {
-            "group": "Success 200",
-            "type": "String",
-            "optional": false,
-            "field": "msg",
-            "description": "<p>结果描述</p>"
-          },
-          {
-            "group": "Success 200",
-            "type": "Number",
-            "optional": false,
-            "field": "code",
-            "description": "<p>状态码</p>"
-          },
-          {
-            "group": "Success 200",
-            "type": "Object[]",
-            "optional": false,
-            "field": "data",
-            "description": ""
-          },
-          {
-            "group": "Success 200",
-            "type": "String",
-            "optional": false,
-            "field": "data.addr",
-            "description": "<p>当前用户地址</p>"
-          },
-          {
-            "group": "Success 200",
-            "type": "String",
-            "optional": false,
-            "field": "data.name",
-            "description": "<p>当前用户的名字</p>"
-          },
-          {
-            "group": "Success 200",
-            "type": "String",
-            "optional": false,
-            "field": "data.type",
-            "description": "<p>当前用户的用户类型(administrator/certifier/bank/company/core_company)</p>"
-          },
-          {
-            "group": "Success 200",
-            "type": "Number",
-            "optional": false,
-            "field": "data.inCredit",
-            "description": "<p>获得的尚未返还的信用凭证总量(certifier和admin没有这个属性)</p>"
-          },
-          {
-            "group": "Success 200",
-            "type": "Number",
-            "optional": false,
-            "field": "data.outCredit",
-            "description": "<p>签发的尚未收回的信用凭证总量(certifier和admin没有这个属性)</p>"
-          }
-        ]
-      }
-    },
-    "version": "0.0.0",
-    "filename": "src/controllers/account.js",
-    "groupTitle": "Account",
-    "name": "GetAccounts"
-  },
-  {
     "type": "post",
     "url": "/accounts/login",
     "title": "登录",
@@ -569,10 +57,46 @@ define({ "api": [
     "groupTitle": "Account"
   },
   {
+    "type": "get",
+    "url": "/administrator/:address",
+    "title": "根据地址获取管理员信息",
+    "group": "Administrator",
+    "success": {
+      "fields": {
+        "Success 200": [
+          {
+            "group": "Success 200",
+            "type": "Object[]",
+            "optional": false,
+            "field": "data",
+            "description": ""
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "data.addr",
+            "description": "<p>// 银行地址</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "Number",
+            "optional": false,
+            "field": "data.outCredit",
+            "description": "<p>// 银行发放的信用点</p>"
+          }
+        ]
+      }
+    },
+    "version": "0.0.0",
+    "filename": "src/controllers/administrator.js",
+    "groupTitle": "Administrator",
+    "name": "GetAdministratorAddress"
+  },
+  {
     "type": "post",
     "url": "/administrator/recyclecredit",
-    "title": "",
-    "name": "管理员从银行回收信用点",
+    "title": "管理员从银行回收信用点",
     "group": "Administrator",
     "parameter": {
       "fields": {
@@ -623,7 +147,8 @@ define({ "api": [
     },
     "version": "0.0.0",
     "filename": "src/controllers/administrator.js",
-    "groupTitle": "Administrator"
+    "groupTitle": "Administrator",
+    "name": "PostAdministratorRecyclecredit"
   },
   {
     "type": "post",
@@ -1126,6 +651,108 @@ define({ "api": [
     "version": "0.0.0",
     "filename": "src/controllers/bank.js",
     "groupTitle": "Bank"
+  },
+  {
+    "type": "get",
+    "url": "/certifiers",
+    "title": "获取全部监督机构",
+    "group": "Certifier",
+    "success": {
+      "fields": {
+        "Success 200": [
+          {
+            "group": "Success 200",
+            "type": "Object[]",
+            "optional": false,
+            "field": "data",
+            "description": "<p>监督机构数组</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "data.addr",
+            "description": ""
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "data.name",
+            "description": ""
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "msg",
+            "description": "<p>结果描述</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "Number",
+            "optional": false,
+            "field": "code",
+            "description": "<p>状态码 200是成功</p>"
+          }
+        ]
+      }
+    },
+    "version": "0.0.0",
+    "filename": "src/controllers/certifier.js",
+    "groupTitle": "Certifier",
+    "name": "GetCertifiers"
+  },
+  {
+    "type": "get",
+    "url": "/certifiers/:addr",
+    "title": "根据地址获取监督机构",
+    "group": "Certifier",
+    "success": {
+      "fields": {
+        "Success 200": [
+          {
+            "group": "Success 200",
+            "type": "Object[]",
+            "optional": false,
+            "field": "data",
+            "description": "<p>监督机构数组</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "data.addr",
+            "description": ""
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "data.name",
+            "description": ""
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "msg",
+            "description": "<p>结果描述</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "Number",
+            "optional": false,
+            "field": "code",
+            "description": "<p>状态码 200是成功</p>"
+          }
+        ]
+      }
+    },
+    "version": "0.0.0",
+    "filename": "src/controllers/certifier.js",
+    "groupTitle": "Certifier",
+    "name": "GetCertifiersAddr"
   },
   {
     "type": "post",

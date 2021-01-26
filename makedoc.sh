@@ -1,1 +1,1 @@
-apidoc -i src/ -o doc/
+apidoc -i src/ -e src/packages/api/compile/compilers/solc-0.5/node_modules/ -o doc/
