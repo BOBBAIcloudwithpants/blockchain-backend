@@ -71,5 +71,43 @@ module.exports = {
    */
   getAllBanks: async (ctx, next) => {
 
+  },
+
+  /**
+   * @api {get} /banks/:addr 根据地址获取银行
+   * @apiGroup Bank
+   * @apiSuccess {String} msg 结果描述
+   * @apiSuccess {Number} code 状态码
+   * @apiSuccess {Object[]} data 银行数组，仅有一个元素
+   * @apiSuccess {String} data.addr 银行地址
+   * @apiSuccess {String} data.name 名字
+   * @apiSuccess {Number} data.inCredit 得到的信用点数
+   * @apiSuccess {Number} data.outCredit 发放出去的总信用点
+   */
+  getBankByAddress: async (ctx, next) => {
+
+  },
+
+  /**
+   * @api {get} /banks/:addr/receipts 根据地址获取所有的贷款
+   * @apiGroup Bank
+   * @apiSuccess {String} msg 结果描述
+   * @apiSuccess {Number} code 状态码
+   * @apiSuccess {Object[]} data 所有贷款单数组
+   * @apiSuccess {String} data.id 
+   * @apiSuccess {String} data.debtorAddr
+   * @apiSuccess {String} data.debteeAddr
+   * @apiSuccess {Number} data.curAmount
+   * @apiSuccess {Number} data.oriAmount
+   * @apiSuccess {Number} data.createTime
+   * @apiSuccess {Number} data.deadline
+   * @apiSuccess {String} bankSignature
+   * @apiSuccess {String} coreCompanySignature
+   */
+  getBankReceipts: async (ctx, next) => {
+
   }
+
+
+
 }
