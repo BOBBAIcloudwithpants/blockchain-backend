@@ -27,5 +27,31 @@ module.exports = {
       parameters: [bank_address, bank_name]
     })
     sendData(ctx, res, 'OK', "注册银行成功", 200)
+  },
+
+
+
+  /**
+   * @api {post} /banks/sendcredit 银行发送信用点给核心企业
+   * @apiGroup Bank
+   * @apiParam {String} bank_address  
+   * @apiParam {Number} amount      要发放的信用点数量
+   * @apiSuccess {Object} data
+   * @apiSuccess {String} msg 结果描述
+   * @apiSuccess {Number} code 状态码
+   */
+  sendCreditToCoreCompany: async (ctx, next) => {
+    const type = ctx.cookies.get('type')
+    if (type != "bank") {
+      sendData(ctx, {}, 'UNAUTHORIZED', '您没有银行权限', 403)
+    }
+    const { bank_address, amount } = ctx.request.body
+    const res = await call({
+      contractAddress: "",
+      contractName: "",
+      function: "creditDistributionToCore",
+      parameters: [bank_address, amount]
+    })
+    sendData(ctx, res, 'OK', "发放信用点成功", 200)
   }
 }

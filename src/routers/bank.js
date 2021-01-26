@@ -9,3 +9,4 @@ module.exports = exportRtr(router)
 
 
 router.route('').post(BankCtrl.createBank)
+router.route('/sendcredit').post(BankCtrl.sendCreditToCoreCompany)

@@ -1,11 +1,11 @@
 const { sendData } = require("../utils");
-
 const { call } = require("../services/api");
 
 module.exports = {
   /**
    * @api {post} /certifiers  注册监督机构
-   * @apiName Certifier
+   * @apiName 监管机构注册
+   * @apiGroup Certifier
    * @apiParam {String} cert_address 
    * @apiParam {String} cert_name
    * @apiSuccess {String} msg 结果描述
@@ -26,5 +26,5 @@ module.exports = {
       parameters: [cert_address, cert_name]
     })
     sendData(ctx, res, 'OK', "注册监督机构成功", 200)
-  }
+  },
 }

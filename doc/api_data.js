@@ -1,62 +1,5 @@
 define({ "api": [
   {
-    "type": "post",
-    "url": "/certifiers",
-    "title": "注册监督机构",
-    "name": "Certifier",
-    "parameter": {
-      "fields": {
-        "Parameter": [
-          {
-            "group": "Parameter",
-            "type": "String",
-            "optional": false,
-            "field": "cert_address",
-            "description": ""
-          },
-          {
-            "group": "Parameter",
-            "type": "String",
-            "optional": false,
-            "field": "cert_name",
-            "description": ""
-          }
-        ]
-      }
-    },
-    "success": {
-      "fields": {
-        "Success 200": [
-          {
-            "group": "Success 200",
-            "type": "String",
-            "optional": false,
-            "field": "msg",
-            "description": "<p>结果描述</p>"
-          },
-          {
-            "group": "Success 200",
-            "type": "Number",
-            "optional": false,
-            "field": "code",
-            "description": "<p>状态码 200是成功，403是无权限</p>"
-          },
-          {
-            "group": "Success 200",
-            "type": "Object[]",
-            "optional": false,
-            "field": "data",
-            "description": "<p>数据</p>"
-          }
-        ]
-      }
-    },
-    "version": "0.0.0",
-    "filename": "src/controllers/certifier.js",
-    "group": "/Users/baijiadong/Codes/blockchain-backend/src/controllers/certifier.js",
-    "groupTitle": "/Users/baijiadong/Codes/blockchain-backend/src/controllers/certifier.js"
-  },
-  {
     "type": "",
     "url": "private",
     "title": "",
@@ -517,7 +460,7 @@ define({ "api": [
             "type": "String",
             "optional": false,
             "field": "type",
-            "description": "<p>类型，(bank/administrator/core_company/company)</p>"
+            "description": "<p>类型，(bank/administrator/core_company/company/certifier)</p>"
           }
         ]
       }
@@ -770,6 +713,63 @@ define({ "api": [
   },
   {
     "type": "post",
+    "url": "/banks/sendcredit",
+    "title": "银行发送信用点给核心企业",
+    "group": "Bank",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "bank_address",
+            "description": ""
+          },
+          {
+            "group": "Parameter",
+            "type": "Number",
+            "optional": false,
+            "field": "amount",
+            "description": "<p>要发放的信用点数量</p>"
+          }
+        ]
+      }
+    },
+    "success": {
+      "fields": {
+        "Success 200": [
+          {
+            "group": "Success 200",
+            "type": "Object",
+            "optional": false,
+            "field": "data",
+            "description": ""
+          },
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "msg",
+            "description": "<p>结果描述</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "Number",
+            "optional": false,
+            "field": "code",
+            "description": "<p>状态码</p>"
+          }
+        ]
+      }
+    },
+    "version": "0.0.0",
+    "filename": "src/controllers/bank.js",
+    "groupTitle": "Bank",
+    "name": "PostBanksSendcredit"
+  },
+  {
+    "type": "post",
     "url": "/banks",
     "title": "注册银行",
     "name": "银行注册(当前用户必须是管理员)",
@@ -824,6 +824,63 @@ define({ "api": [
     "version": "0.0.0",
     "filename": "src/controllers/bank.js",
     "groupTitle": "Bank"
+  },
+  {
+    "type": "post",
+    "url": "/certifiers",
+    "title": "注册监督机构",
+    "name": "监管机构注册",
+    "group": "Certifier",
+    "parameter": {
+      "fields": {
+        "Parameter": [
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "cert_address",
+            "description": ""
+          },
+          {
+            "group": "Parameter",
+            "type": "String",
+            "optional": false,
+            "field": "cert_name",
+            "description": ""
+          }
+        ]
+      }
+    },
+    "success": {
+      "fields": {
+        "Success 200": [
+          {
+            "group": "Success 200",
+            "type": "String",
+            "optional": false,
+            "field": "msg",
+            "description": "<p>结果描述</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "Number",
+            "optional": false,
+            "field": "code",
+            "description": "<p>状态码 200是成功，403是无权限</p>"
+          },
+          {
+            "group": "Success 200",
+            "type": "Object[]",
+            "optional": false,
+            "field": "data",
+            "description": "<p>数据</p>"
+          }
+        ]
+      }
+    },
+    "version": "0.0.0",
+    "filename": "src/controllers/certifier.js",
+    "groupTitle": "Certifier"
   },
   {
     "type": "post",
